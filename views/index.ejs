@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lisper</title>
+  <!-- Preconnect to Google Fonts for faster loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Importing custom fonts from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Titan+One&display=swap" rel="stylesheet">
+  
+  <!-- Linking the main CSS file for styling -->
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+<body>
+  <!-- Main heading of the page -->
+  <h1>What's your secret?</h1>
+  
+  <!-- Card to display the secret -->
+  <div class="card">
+    <p>
+      <!-- EJS syntax to inject the secret data -->
+      <%= secret %>
+    </p>
+  </div>
+  
+  <!-- Paragraph to display the username of the person who submitted the secret -->
+  <p class="user">
+    <!-- EJS syntax to inject the username data -->
+    <%= user %>
+  </p>
+</body>
+
+</html>
